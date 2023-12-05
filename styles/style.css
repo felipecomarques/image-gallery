@@ -102,7 +102,6 @@ header {
 }
 .anterior,
 .proximo {
-    display: none;
     font-size: 1em;
     background-color: #333;
     color: white;
