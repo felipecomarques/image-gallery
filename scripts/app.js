@@ -23,10 +23,12 @@ const voltarImagem = function() {
 
 const selecionarImagem = function(){
     imagemPrincipal.src = todasImagens[idImagemAtiva].src;
+    textoAlternativo.innerHTML = todasImagens[idImagemAtiva].alt;
     todasImagens.forEach(function(imagem){
         imagem.classList = "";
     });
-    todasImagens[idImagemAtiva].classList.add("");
+    
+    todasImagens[idImagemAtiva].classList.add("selecionada");
 }
 
 btnProximo.addEventListener("click", proximaImagem);
@@ -34,6 +36,7 @@ btnAnterior.addEventListener("click", voltarImagem);
 
 todasImagens.forEach(function (imagem, numeroImage){
     imagem.addEventListener("click", function(){
-        // ainda precisa fazer
+        idImagemAtiva = numeroImage;
+        selecionarImagem();
     });
 });

@@ -103,18 +103,23 @@ header {
 .anterior,
 .proximo {
     font-size: 1em;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    border-radius: 15px;
+    border-color: white;
+    border-radius: 1;
     background-color: #333;
     color: white;
-    border: none;
     cursor: pointer;
     outline: none;
     position: absolute;
     padding: 16px;
+    transition: 1s;
 }
 .anterior span,
 .proximo span {
     padding: 0 8px;
-    display: none;
+    transition: 1s;
 }
 .anterior {
     left: 48px;
