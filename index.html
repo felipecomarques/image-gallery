@@ -1,12 +1,42 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galeria de Imagens</title>
+    <title>Image gallery</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
+    <header>
+        <h1 class="titulo">Image gallery</h1>
+        <p class="subtitulo">All images were created by artificial intelligence</p>
+        <p class="creditos">
+            <a href="https://labs.openai.com/" target="_blank">DALL-E v2</a>
+        </p>
+    </header>
+
+    <section id="galeria">
+        <div id="imagem-principal">
+            <p class="texto-alternativo">Select an image below to view in higher resolution</p>
+            <img src="">
+            <button class="anterior">&lt; <span>Previous</span></button>
+            <button class="proximo"><span>Next</span> &gt;</button>
+        </div>
+
+        <div id="imagens">
+            <img src="./assets/burger.png" alt="Picture of a hamburger">
+            <img src="./assets/car-futurista.png" alt="Picture of a futuristic car">
+            <img src="./assets/estatua.png" alt="Picture of a statue">
+            <img src="./assets/gato-submarino.png" alt="Picture of a cat-submarine">
+            <img src="./assets/girassol.png" alt="Picture of a sunflower">
+            <img src="./assets/macbook.png" alt="Picture of a macbook">
+            <img src="./assets/monster.png" alt="Picture of a monster">
+            <img src="./assets/por-do-sol.png" alt="Picture of a sunset">
+            <img src="./assets/rei-capivara.png" alt="Picture of a capybara king">
+            <img src="./assets/sorvetes-monstros.png" alt="Picture of icecreams">
+        </div>
+    </section>
+
     <script src="./scripts/app.js"></script>
 </body>
 </html>
